@@ -16,3 +16,6 @@ let () =
 
     let d03p1 = Day03.solve_part1 "./data/day03.txt" in
     print_endline ("Day 3, Part 1: " ^ (string_of_int d03p1));;
+
+    let d03p2 = Day03.solve_part2 "./data/day03.txt" in
+    print_endline ("Day 3, Part 1: " ^ (string_of_int d03p2));;
