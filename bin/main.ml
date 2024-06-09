@@ -12,5 +12,6 @@ let () =
     let d02p1 = Day02.solve_part1 d02_data in
     print_endline ("Day 2, Part 1: " ^ (string_of_int d02p1));;
 
-    let d02p2 = Day02.solve_part2 in
+    let d02_data = File.lines_of "./data/day02_data" in
+    let d02p2 = Day02.solve_part2 d02_data in
     print_endline ("Day 2, Part 2: " ^ (string_of_int d02p2));;
