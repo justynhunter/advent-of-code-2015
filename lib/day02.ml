@@ -20,14 +20,16 @@ let ribbon_length (h, w, l) =
     let p = min hw (min lw hl) in
     ribbon + (2 * p)
 
-let solve_part1 lines =
-    lines
+let solve_part1 file_path =
+    file_path
+    |> File.lines_of
     |> Enum.map parse_dims
     |> Enum.map required_wrap
     |> Enum.fold (+) 0
 
-let solve_part2 lines =
-    lines
+let solve_part2 file_path =
+    file_path
+    |> File.lines_of
     |> Enum.map parse_dims
     |> Enum.map ribbon_length
     |> Enum.fold (+) 0
